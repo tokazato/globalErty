@@ -24,16 +24,17 @@ header {
 }
 .geo, .eng {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 13px;
     color: #0C0F0A;
     transition: 0.3s ease;
+    margin: 5px 0;
+}
+.eng {
+    color: #fff;
 }
 .geo:hover, .eng:hover {
     color: #fff;
     transition: 0.3s ease;
-}
-.mainLogo {
-    margin-right: 170px;
 }
 .navUl {
     display: flex;
@@ -79,8 +80,7 @@ header {
 .dropDownContent {
     position: absolute;
     width: 200px;
-    height: 200px;
-    margin-top: 30px;
+    margin-top: 18px;
 }
 .dropDownContent li {
   display: none;
@@ -105,7 +105,7 @@ border-top-right-radius: 10px;
     content: '';
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 768px;
     top: 0;
     left: 0;
     background: #1B1B1E;
@@ -115,14 +115,14 @@ border-top-right-radius: 10px;
     content: '';
     position: absolute;
     width: 453px;
-    height: 100vh;
+    height: 1258px;
     top: 0;
     right: 0;
     background: #43CC0E;
     z-index: -1;
 }
 .socialLogo {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 51px;
     transform: translate(0, -50%);
@@ -130,8 +130,8 @@ border-top-right-radius: 10px;
 .socialLogo a {
     margin: 19px 0; 
     background: #707070;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     color: #1B1B1E;
     border-radius: 50%;
     display: flex;
@@ -139,6 +139,7 @@ border-top-right-radius: 10px;
     justify-content: center;
     align-items: center;
     transition: 0.5s ease;
+    color: #fff;
 }
 .socialLogo a:hover {
     background: #43CC0E;
@@ -177,7 +178,8 @@ border-top-right-radius: 10px;
 .sliderSmallPic {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     margin-bottom: 108px;
+    bottom: 140px;
 }
