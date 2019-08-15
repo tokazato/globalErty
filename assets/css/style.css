@@ -307,7 +307,7 @@ header {
     width: 100%;
 }
 .sateliteBox img {
-    background: #f5f4f4;
+    background: #f9f9f9;
     padding: 30px;
     border-radius: 55% 33% 0% 10%;
     transition: 0.9s ease;
@@ -317,27 +317,23 @@ header {
    transition: 0.9s ease;
 }
 .wirelessBox img {
-    background: #f5f4f4;
+    background: #f9f9f9;
     padding: 30px;
     border-radius: 25% 25% 0% 0%;
     transition: 0.9s ease;
 }
 .wirelessBox img:hover {
-    background: #f5f4f4;
-    padding: 30px;
     border-radius: 0% 0% 25% 25%;
     transition: 0.9s ease;
 }
 .voidPhoneBox img {
-    background: #f5f4f4;
+    background: #f9f9f9;
     padding: 50px;
     border-radius: 25% 0% 28% 0%;
     transition: 0.9s ease;
 }
 .voidPhoneBox img:hover {
-    background: #f5f4f4;
-    padding: 50px;
-    border-radius: 20% 30% 0% 40%;
+    border-radius: 10% 25% 0% 40%;
     transition: 0.9s ease;
 }
 .sateliteTextBox h1, .wirelessTextBox h1, .voidPhoneTextBox h1 {
