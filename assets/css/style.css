@@ -62,23 +62,23 @@ header {
     margin: 0 20px;
     color: #fff;
     font-size: 13px;
-    transition: 0.3s ease;
+    transition: 0.6s ease;
 }
 .navUl a:hover {
     color: rgb(57, 160, 17);
-    transition: 0.3s ease;
+    transition: 0.6s ease;
 }
 .navOrder {
     padding: 17px 55px;
     background: #fff;
     color: #1A1B41 !important;
     border-radius: 10px;
-    transition: 0.5s ease;
+    transition: 0.6s ease;
     font-weight: bold;
 }
 .navOrder:hover {
     background: #43CC0E;
-    transition: 0.5s ease;
+    transition: 0.6s ease;
     border: 2px solid #fff;
     color: #fff !important;
 }
@@ -160,12 +160,13 @@ header {
 .main::after {
     content: '';
     position: absolute;
-    width: 453px;
-    height: 1258px;
-    top: 0;
+    width: 20%;
+    height: 1358px;
+    top: -100px;
     right: 0;
     background: #43CC0E;
     z-index: -1;
+    transform: skewY(20deg);
 }
 .socialLogo {
     position: fixed;
@@ -193,11 +194,10 @@ header {
 }
 .mainText h1 {
     margin-top: 54px;
-    margin-bottom: 35px;
     font-size: 35px;
-    width: 381px;
+    width: 451px;
     font-family: promed;
-    position: relative;
+    position: absolute;
     z-index: 1;
 }
 .mainText {
@@ -205,10 +205,12 @@ header {
     flex-direction: column;
 }
 .mainDescript {
+    margin-top: 170px;
     margin-bottom: 35px;
     width: 258px;
     font-family: proreg;
     font-size: 15px;
+    margin-right: 10px;
 }
 .mainOrder {
     width: 200px;
@@ -262,7 +264,7 @@ header {
     width: 224px;
     background: #fff;
     box-shadow: 0 3px 3px lightgray;
-    border-radius: 10px;
+    border-radius: 10px ;
     margin-bottom: 140px;
     position: relative;
     bottom: 0;
@@ -304,6 +306,40 @@ header {
     margin-bottom: 168px;
     width: 100%;
 }
+.sateliteBox img {
+    background: #f5f4f4;
+    padding: 30px;
+    border-radius: 55% 33% 0% 10%;
+    transition: 0.9s ease;
+}
+.sateliteBox img:hover {
+    border-radius: 0% 33% 55% 10%;
+   transition: 0.9s ease;
+}
+.wirelessBox img {
+    background: #f5f4f4;
+    padding: 30px;
+    border-radius: 25% 25% 0% 0%;
+    transition: 0.9s ease;
+}
+.wirelessBox img:hover {
+    background: #f5f4f4;
+    padding: 30px;
+    border-radius: 0% 0% 25% 25%;
+    transition: 0.9s ease;
+}
+.voidPhoneBox img {
+    background: #f5f4f4;
+    padding: 50px;
+    border-radius: 25% 0% 28% 0%;
+    transition: 0.9s ease;
+}
+.voidPhoneBox img:hover {
+    background: #f5f4f4;
+    padding: 50px;
+    border-radius: 20% 30% 0% 40%;
+    transition: 0.9s ease;
+}
 .sateliteTextBox h1, .wirelessTextBox h1, .voidPhoneTextBox h1 {
     font-size: 37px;
     padding-bottom: 30px;
@@ -329,15 +365,6 @@ header {
 .partniorBox {
     margin-bottom: 40px;
 }
-.friendlyCompanies::before {
-    content: '';
-    position: absolute;
-    height: 512px;
-    width: 420px;
-    background: #43CC0E;
-    left: 0;
-    z-index: -2;
-}
 .partniorBox h1 {
     color: #1A1B41;
     margin-bottom: 10px;
@@ -349,6 +376,17 @@ header {
     font-size: 15px;
     margin-bottom: 48px;
     font-family: promed;
+    overflow: hidden;
+}
+.friendlyCompanies::before {
+    content: '';
+    position: absolute;
+    height: 512px;
+    width: 420px;
+    background: #43CC0E;
+    left: -100px;
+    z-index: -2;
+    transform: skew(-40deg);
 }
 .sliderBox {
     position: relative;
@@ -368,6 +406,8 @@ header {
 }
 .sliderContent li img {
     margin: 0 47px 0 0;
+    box-shadow: 0px 3px 5px #BCBCBC;
+    border-radius: 10px;
 }
 .partnior {
     text-align: left;
@@ -422,6 +462,9 @@ footer::before {
 .contactBox {
     display: flex;
     flex-direction: column;
+    border-left: 1px solid #333335;
+    border-right: 1px solid #333335;
+    padding: 20px 100px;
 }
 .contactBox a {
     margin-bottom: 9px;
