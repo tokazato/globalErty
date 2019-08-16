@@ -32,6 +32,79 @@ header {
     position: relative;
     font-family: proreg;
 }
+/* open navigation  */
+.navBarBox {
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 100px;
+    width: 100vw;
+    height: 150vh;
+    z-index: 2;
+    color: #0C0F0A;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: none;
+}
+.openNavul {
+    margin-top: 60px;
+}
+.mainNav {
+    padding: 20px 0;
+    text-align: center;
+}
+.mainNavLink {
+    color: #1B1B1E;
+    font-size: 20px;
+    font-family: proreg;
+    transition: 0.5s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.mainNavLink:hover {
+    color: #fff;
+    background: #43CC0E;
+    transition: 0.5s ease;
+}
+.showTelephone {
+    display: none;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.showTelephone li a {
+    font-size: 15px;
+    color: #1A1B41;
+    font-family: proreg;
+}
+.showTelephone li a:hover {
+    color: #43CC0E;
+}
+.showTelephone li {
+    padding: 5px 0;
+}
+.openNavLanguage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.languageSmalBox {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    border-top: 1px solid #BCBCBC;
+}
+.openNavLanguage p {
+    margin: 0 6px;
+}
+
+
 .language {
     position: absolute;
     right: -60px;
@@ -256,8 +329,9 @@ nav {
     font-size: 25px;
     color: #1B1B1E;
 }
-.sliderArrow span {
+.arrowLeft, .arrowRight {
     margin: 0 10px;
+    cursor: pointer;
 }
 .sliderSmallPic {
     display: flex;
@@ -265,6 +339,7 @@ nav {
     align-items: flex-start;
     position: relative;
     bottom: 140px;
+    width: 650px;
 }
 .ourServices {
     margin-top: 30px;
@@ -441,9 +516,6 @@ nav {
 .partnior {
     text-align: left;
 }
-.arrowLeft, .arrowRight {
-    cursor: pointer;
-}
 footer {
     display: flex;
     flex-direction: row;
@@ -451,7 +523,6 @@ footer {
     align-items: center;
     color: #BCBCBC;
     font-size: 15px;
-    width: 100%;
     font-family: promed;
 }
 footer::before {
@@ -467,6 +538,7 @@ footer::before {
     display: flex;
     flex-direction: column;
     padding: 46px;
+    width: calc(100% / 3);
 }
 .footerBox1 h4, .contactBox h4 {
     margin-bottom: 19px;
@@ -475,10 +547,12 @@ footer::before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 209px;
 }
 .navigation ul li {
     margin-bottom: 9px;
+}
+.navFirstUl {
+    margin-right: 55px;
 }
 .navigation ul li a {
     color: #BCBCBC;
@@ -494,6 +568,7 @@ footer::before {
     border-left: 1px solid #333335;
     border-right: 1px solid #333335;
     padding: 20px 100px;
+    width: calc(100% / 3);
 }
 .contactBox a {
     margin-bottom: 9px;
@@ -503,6 +578,8 @@ footer::before {
 .footerSocialLogoBox {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    padding: 5px;
 }
 .footerSocialLogo {
     display: flex;
@@ -556,7 +633,7 @@ footer::before {
         width: 200px;
     }
     .navOrder {
-        display: none;
+        padding: 10px 15px;
     }
     .main {
         height: 565px;
@@ -578,13 +655,46 @@ footer::before {
     .wirelessBox {
         flex-direction: column-reverse;
     }
-    .wirelessTextBox h1{
-        font-size: 30px;
+    .sateliteTextBox h1, .wirelessTextBox h1, .voidPhoneTextBox h1 {
+        font-size: 25px;
     }
     .sateliteBox img, .wirelessBox img, .voidPhoneBox img {
-        width: 400px;
-        height: 300px;
+        width: 80%;
+        margin-bottom: 47px;
     }
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer::before {
+        height: 600px;
+        border-top-left-radius: 0px;
+    }
+    .footerBox1 {
+        padding: 30px 0;
+        width: 100%;
+    }
+    .contactBox {
+        border-left: 0px solid #333335;
+        border-right: 0px solid #333335;
+        border-top: 1px solid #333335;
+        border-bottom: 1px solid #333335;
+        padding: 30px 20px;
+        width: 70%;
+        text-align: center;
+    }
+    .footerBox1 h4, .contactBox h4 {
+       text-align: center;
+    }
+    .footerSocialLogoBox {
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .navigation {
+        justify-content: center;
+    }
+    
 }
 @media only screen and (min-width: 320px) {
     .mainText h1 {
@@ -602,7 +712,7 @@ footer::before {
 }
 @media only screen and (min-width: 460px) {
     .navOrder {
-        display: flex;
+        padding: 17px 55px;
     }
     .main {
         height: 665px;
@@ -613,8 +723,11 @@ footer::before {
     .mainImg {
         height: 526px;
     }
-    .wirelessTextBox h1 {
+    .sateliteTextBox h1, .wirelessTextBox h1, .voidPhoneTextBox h1 {
         font-size: 37px;
+    }
+    .sateliteBox img, .wirelessBox img, .voidPhoneBox img {
+        width: 400px;
     }
 }
 @media only screen and (min-width: 580px) {
@@ -631,9 +744,48 @@ footer::before {
     .sliderSmallPic {
         display: flex;
     }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer::before {
+        height: 240px;
+        border-top-left-radius: 10px;
+    }
+    .footerBox1 {
+        padding: 46px;
+        width: calc(100% / 3);
+    }
+    .contactBox {
+        align-items: none;
+        border-left: 1px solid #333335;
+        border-right: 1px solid #333335;
+        border-top: 0px solid #333335;
+        border-bottom: 0px solid #333335;
+        width: calc(100% / 3);
+        text-align: left;
+    }
+    .footerBox1 h4, .contactBox h4 {
+        text-align: left;
+     }
+     .footerSocialLogoBox {
+        align-items: flex-end;
+        text-align: right;
+    }
+    .navigation {
+        justify-content: flex-start;
+    }
 }
-@media only screen and (min-width: 980px) {
-
+@media only screen and (min-width: 906px) {
+    .wirelessBox {
+        flex-direction: row;
+    }
+    .sateliteBox img, .wirelessBox img, .voidPhoneBox img {
+        margin-bottom: 47px;
+    }
+}
+@media only screen and (min-width: 960px) {
+    
 }
 @media only screen and (min-width: 1150px) {
     .navUl {
@@ -644,6 +796,9 @@ footer::before {
     }
     .mainText {
         position: static;
+    }
+    .contactBox {
+        padding: 20px 100px;
     }
 }
 @media only screen and (min-width: 1330px) {

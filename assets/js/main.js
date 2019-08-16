@@ -33,4 +33,13 @@ $(document).ready(function(){
 //     $('.greenBall').css('display', 'block');
 // })
 
+
+$('.openTelephone').on('click', function(){
+    $('.showTelephone').slideToggle();
+})
+
+$('.burger').on('click', function(){
+    $('.navBarBox').slideToggle();
+})
+
 })
