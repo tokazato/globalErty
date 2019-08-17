@@ -716,6 +716,9 @@ footer::before {
     .navOrder {
        display: none;
     }
+    .friendlyCompanies::before {
+        display: none;
+    }
     
 }
 @media only screen and (min-width: 320px) {
@@ -766,6 +769,9 @@ footer::before {
     .sateliteText, .wirelessText, .voidPhoneText {
         width: 481px;
         font-size: 15px;
+    }
+    .friendlyCompanies::before {
+        display: block;
     }
 }
 @media only screen and (min-width: 780px) {
