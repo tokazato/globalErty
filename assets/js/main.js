@@ -39,7 +39,9 @@ $('.openTelephone').on('click', function(){
 })
 
 $('.burger').on('click', function(){
-    $('.navBarBox').slideToggle();
+    $('.navBarBox').slideToggle('slow');
+    $(this).toggleClass('change');
+    $('body').toggleClass('open');
 })
 
 })
