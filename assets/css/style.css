@@ -508,11 +508,12 @@ body.open {
     content: '';
     position: absolute;
     height: 512px;
-    width: 420px;
+    width: 30%;
     background: #43CC0E;
     left: -100px;
     z-index: -2;
     /* transform: skew(-40deg); */
+    -webkit-clip-path: polygon(0 0, 100% 11%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 11%, 100% 100%, 0% 100%);
 }
 .sliderBox {
@@ -717,9 +718,6 @@ footer::before {
     .navOrder {
        display: none;
     }
-    .friendlyCompanies::before {
-        display: none;
-    }
     
 }
 @media only screen and (min-width: 320px) {
@@ -770,9 +768,6 @@ footer::before {
     .sateliteText, .wirelessText, .voidPhoneText {
         width: 481px;
         font-size: 15px;
-    }
-    .friendlyCompanies::before {
-        display: block;
     }
 }
 @media only screen and (min-width: 780px) {
