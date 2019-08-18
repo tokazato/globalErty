@@ -512,7 +512,8 @@ body.open {
     background: #43CC0E;
     left: -100px;
     z-index: -2;
-    transform: skew(-40deg);
+    /* transform: skew(-40deg); */
+    clip-path: polygon(0 0, 100% 11%, 100% 100%, 0% 100%);
 }
 .sliderBox {
     position: relative;
