@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Global Erty</title>
 </head>
 <body>
@@ -68,14 +68,15 @@
                 </div>
             </div>
     </div>
+    <div class="socialLogo">
+        <a href="#!"><i class="fas fa-phone-alt"></i></a>
+        <a href="#!"><i class="fab fa-facebook-f"></i></a>
+        <a href="#!"><i class="fas fa-envelope"></i></a>
+        <a href="#!"><i class="fab fa-skype"></i></a>
+    </div>
     <div class="main">
     <div class="mainContent">
-        <div class="socialLogo">
-            <a href="#!"><i class="fas fa-phone-alt"></i></a>
-            <a href="#!"><i class="fab fa-facebook-f"></i></a>
-            <a href="#!"><i class="fas fa-envelope"></i></a>
-            <a href="#!"><i class="fab fa-skype"></i></a>
-        </div>
+
         <div class="mainText">
             <h1>Interested in ordering our services?</h1>
             <p class="mainDescript">Lorem ipsum dolor sit amet, qui ex placerat argumentum, lorem possim docendi in per. 
@@ -83,15 +84,43 @@
             </p>
             <p class="mainOrder">Order Service</p>
         </div>
-        <div>
-            <img class="mainImg" src="assets/media/img/luca-bravo-207676-unsplash.png" alt="">
-            <div class="sliderArrow"><span class="arrowLeft zato"><i class="fas fa-angle-left"></i></span><span class="arrowRight"><i class="fas fa-angle-right"></i></span></div>
+
+        <div style="overflow: hidden" >
+
+            <div>
+                <div class="swiper-container mainSliderTop">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <img class="mainImg " src="assets/media/img/luca-bravo-207676-unsplash.png" alt="">
+                        </div>
+                        <div class="swiper-slide ">
+                                <img class="mainImg" src="assets/media/img/cyEI2XzWv9T3QE5B.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mainImg" src="assets/media/img/hVUQDGopAaHCSuB3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <img class="mainImg" src="assets/media/img/luca-bravo-207676-unsplash.png" alt=""> -->
+            <div class="sliderArrow"><span class="arrowLeft mainSliderPrev"><i class="fas fa-angle-left"></i></span><span class="arrowRight mainSliderRight"><i class="fas fa-angle-right"></i></span></div>
         </div>
     </div>
     <div class="sliderSmallPic">
-        <img src="assets/media/img/Group 133.png" alt="">
-        <img src="assets/media/img/willian-justen-de-vasconcellos-616948-unsplash.png" alt="">
-        <img src="assets/media/img/willian-justen-de-vasconcellos-616948-unsplash.png" alt="">
+                <div class="swiper-container mainSliderThumbs">
+                <div class="swiper-wrapper mainSwiperSliderBox">
+                    <div class="swiper-slide mainSwiperSlider ">
+                        <img class="smallPic" src="assets/media/img/luca-bravo-207676-unsplash.png" alt="">
+                    </div>
+                    <div class="swiper-slide mainSwiperSlider">
+                        <img class="smallPic" src="assets/media/img/cyEI2XzWv9T3QE5B.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide mainSwiperSlider">
+                        <img class="smallPic" src="assets/media/img/hVUQDGopAaHCSuB3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
     </div>
 </div>
     <section>
@@ -159,22 +188,31 @@
         <h1>Our Partners</h1>
         <p class="friendlyCompanies">Friendly Companies</p>
         <div class="sliderBox">
-        <ul class="sliderContent">
-            <li><img src="assets/media/img/bat-R.png" alt=""></li>
-            <li><img src="assets/media/img/eliteleqtronika-R.png" alt=""></li>
-            <li><img src="assets/media/img/GAirvays-R.png" alt=""></li>
-            <li><img src="assets/media/img/ogt-R.png" alt=""></li>
-            <li><img src="assets/media/img/Socar-R.png" alt=""></li>
-            <li><img src="assets/media/img/Tegeta-R.png" alt=""></li>
-            <li><img src="assets/media/img/bat-R.png" alt=""></li>
-            <li><img src="assets/media/img/eliteleqtronika-R.png" alt=""></li>
-            <li><img src="assets/media/img/GAirvays-R.png" alt=""></li>
-            <li><img src="assets/media/img/ogt-R.png" alt=""></li>
-            <li><img src="assets/media/img/Socar-R.png" alt=""></li>
-            <li><img src="assets/media/img/Tegeta-R.png" alt=""></li>
-        </ul>
+                <div class="swiper-container footerSlider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide footerSwiperWraper"><img src="assets/media/img/bat-R.png" alt=""></div>
+                          <div class="swiper-slide footerSwiperWraper"><img src="assets/media/img/eliteleqtronika-R.png" alt=""></div>
+                          <div class="swiper-slide footerSwiperWraper"><img src="assets/media/img/GAirvays-R.png" alt=""></div>
+                          <div class="swiper-slide footerSwiperWraper"><img src="assets/media/img/ogt-R.png" alt=""></div>
+                          <div class="swiper-slide footerSwiperWraper"><img src="assets/media/img/Socar-R.png" alt=""></div>
+                          <div class="swiper-slide footerSwiperWraper"><img src="assets/media/img/Tegeta-R.png" alt=""></div>
+                          <div class="swiper-slide footerSwiperWraper"><img src="assets/media/img/bat-R.png" alt=""></div>
+                          <div class="swiper-slide footerSwiperWraper"><img src="assets/media/img/eliteleqtronika-R.png" alt=""></div>
+                          <div class="swiper-slide footerSwiperWraper"><img src="assets/media/img/GAirvays-R.png" alt=""></div>
+                          <div class="swiper-slide footerSwiperWraper"><img src="assets/media/img/ogt-R.png" alt=""></div>
+                          <div class="swiper-slide footerSwiperWraper"><img src="assets/media/img/Socar-R.png" alt=""></div>
+                          <div class="swiper-slide footerSwiperWraper"><img src="assets/media/img/Tegeta-R.png" alt=""></div>
+                        </div>
+                      </div>
     </div>
-        <div class="partnior sliderArrow"><span class="arrowLeft"><i class="fas fa-angle-left"></i></span><span class="arrowRight"><i class="fas fa-angle-right"></i></span></div>
+        <div class="partnior sliderArrow">
+            <span class="arrowLeft footer-slider-prev">
+                <i class="fas fa-angle-left"></i>
+            </span>
+            <span class="arrowRight footer-slider-next">
+                <i class="fas fa-angle-right"></i>
+            </span>
+        </div>
     </div>
     <footer>
         <div class="footerBox1">
@@ -210,6 +248,13 @@
             <p>Copyright 2018 © All Right Reserved</p>
         </div>
     </footer>
-    <script src="assets/js/main.js"></script>
+    
+    
+
+    
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./assets/js/swiper.min.js" ></script>
+<script src="assets/js/swiperStart.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
